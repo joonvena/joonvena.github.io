@@ -7,5 +7,6 @@ theme = "anatole"
 title = "Joonas Venäläinen"
 author = "Joonas Venäläinen"
 description = "DevOps Engineer"
+profilePicture = "images/profile.jpg"
 displayMode = "light"
 disableThemeSwitcher = true
