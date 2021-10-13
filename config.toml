@@ -10,3 +10,20 @@ description = "DevOps Engineer"
 profilePicture = "images/profile.jpg"
 displayMode = "light"
 disableThemeSwitcher = true
+customCss = ["css/custom.css"]
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "Github"
+url = "https://github.com/joonvena/"
+
+[[params.socialIcons]]
+icon = "fab fa-medium"
+title = "Medium"
+url = "https://medium.com/@joonasvenlinen"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://fi.linkedin.com/in/joonas-ven%C3%A4l%C3%A4inen-557119161"
+
