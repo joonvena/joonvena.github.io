@@ -4,5 +4,8 @@ title = "My New Hugo Site"
 theme = "anatole"
 
 [params]
+title = "Joonas Venäläinen"
+author = "Joonas Venäläinen"
+description = "DevOps Engineer"
 displayMode = "light"
 disableThemeSwitcher = true
