@@ -1,3 +1,7 @@
 .sidebar .social-links a:hover {
   color: #6600FF;
 }
+
+.grid-section {
+  margin: 30px;
+}

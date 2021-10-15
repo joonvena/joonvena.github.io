@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html
+  dir="{{ .Site.Language.LanguageDirection | default "ltr" }}"
+  lang="{{- site.Language.Lang -}}"
+  data-theme="{{- .Site.Params.displayMode -}}"
+>
+  {{- partial "head.html" . -}}
+  <body>
+    <header>{{ partial "navbar.html" . }}</header>
+    <div class="wrapper">
+      <aside>
+        {{- partial "sidebar.html" . -}}
+      </aside>
+      <main>
+        <div class="autopagerize_page_element">
+          {{ if .Page.IsHome }}
+            <div class="content">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <div class="grid-section">
+                  {{ partial "cv.html" . }}  
+                </div>
+                <div class="grid-section">
+                  {{ partial "medium.html" . }}
+                </div>
+              </div>
+            </div>
+          {{ else }}
+            <div class="content">
+              {{- block "main" . }}{{- end }}
+            </div>
+          {{ end }}
+        </div>
+      </main>
+    </div>
+
+    {{- partial "footer.html" (dict "context" . "footerClassModifier" "base") -}}
+
+    {{- if (eq .Site.Params.simpleAnalytics.enable true) -}}
+      {{- partial "analytics/simpleanalytics.html" . -}}
+
+
+    {{- end -}}
+  </body>
+</html>
